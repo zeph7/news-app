@@ -46,7 +46,7 @@ It's a comprehensive android sample app designed to showcase the best practices 
 
 The architecture of the app complies with each of the following five points:
 
-* A single-activity architecture, using the navigation component to manage screen's naviagtion.
+* A single-activity architecture, using the navigation component to manage screen's navigation.
 * Android architecture components, part of Android Jetpack, to project a robust design.
 * Model-View-ViewModel facilitating a separation of concern.
 * Clean Architecture to build a scalable, maintainable and efficient app.
@@ -89,7 +89,7 @@ Each of the feature module contains the three main layers as in clean architectu
     ⇀ sub_feature_2
     ⇀ ...
 
-  ↳ util
+  ⇀ util
 ```
 
 <img alt="App image" src="https://developer.android.com/static/topic/libraries/architecture/images/mad-arch-overview.png" width="50%" hspace="10">
