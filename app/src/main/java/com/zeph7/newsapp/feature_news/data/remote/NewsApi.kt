@@ -1,5 +1,6 @@
 package com.zeph7.newsapp.feature_news.data.remote
 
+import com.zeph7.newsapp.BuildConfig
 import com.zeph7.newsapp.core.util.Constants
 import com.zeph7.newsapp.feature_news.data.remote.dto.HeadlineDto
 import retrofit2.http.GET
@@ -23,7 +24,7 @@ interface NewsApi {
 
     companion object {
         const val BASE_URL = "https://newsapi.org/v2/"
-        const val API_KEY = "103555b442974edc99d15f97542e2ada"
+        const val API_KEY = BuildConfig.API_KEY
     }
 
 }
