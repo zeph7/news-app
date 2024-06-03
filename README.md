@@ -119,11 +119,13 @@ This project takes advantage of many popular libraries, plugins and tools of the
 ## Instructions
 
 1. Clone or download the repo: `https://github.com/zeph7/news-app`.
-2. Navigate to the folder `news-app`.
-3. Navigate to the folder `news-app/app/src/` to access developers content.
-3. Navigate to the folder `apk` for users to access apk.
-4. Copy the apk from folder `apk` to an android phone.
-5. Install the apk.
+2. Get your api key: `https://newsapi.org/`
+3. Paste this line in local.properties `API_KEY = "YOUR-API-KEY"`
+4. Navigate to the folder `news-app`.
+5. Navigate to the folder `news-app/app/src/` to access developers content.
+6. Navigate to the folder `apk` for users to access apk.
+7. Copy the apk from folder `apk` to an android phone.
+8. Install the apk.
 
 - The app is finally installed on your Android mobile device !!
 - To directly download the apk [click here](https://github.com/zeph7/news-app/tree/master/apk).
