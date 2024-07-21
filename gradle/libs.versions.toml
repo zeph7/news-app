@@ -3,7 +3,11 @@ agp = "8.5.1"
 kotlin = "1.9.20"
 coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.2.1"
+junitJupiter = "5.10.2"
+turbine = "1.0.0"
+roboelectric = "4.11.1"
+coroutineTest = "1.4.32"
+lifecycleTest = "2.8.3"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.3"
 activityCompose = "1.9.0"
@@ -22,7 +26,12 @@ ksp = "1.9.10-1.0.13"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+junit-vintage = { group = "org.junit.vintage", name = "junit-vintage-engine", version.ref = "junitJupiter" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+roboelectric = { group = "org.roboelectric", name = "roboelectric", version.ref = "roboelectric" }
+coroutineTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutineTest" }
+lifecycleTest = { group = "androidx.lifecycle", name = "lifecycle-runtime-testing", version.ref = "lifecycleTest" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }

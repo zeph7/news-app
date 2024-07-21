@@ -112,7 +112,12 @@ dependencies {
 
     // test
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.turbine)
+    testImplementation(libs.coroutineTest)
+    testImplementation(libs.lifecycleTest)
+    testImplementation(libs.roboelectric)
+    testRuntimeOnly(libs.junit.vintage)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
