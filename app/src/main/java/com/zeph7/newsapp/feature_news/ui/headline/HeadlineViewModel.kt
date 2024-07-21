@@ -21,7 +21,7 @@ class HeadlineViewModel @Inject constructor(
     var uiState by mutableStateOf(HeadlineUiState())
         private set
 
-    private var _uiEvent = MutableSharedFlow<HeadlineUiEvent>()
+    private val _uiEvent = MutableSharedFlow<HeadlineUiEvent>()
     val uiEvent = _uiEvent.asSharedFlow()
 
     init {
