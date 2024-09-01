@@ -5,7 +5,7 @@ coreKtx = "1.13.1"
 junit = "4.13.2"
 junitJupiter = "5.10.2"
 turbine = "1.0.0"
-roboelectric = "4.11.1"
+robolectric = "4.11.1"
 coroutineTest = "1.4.32"
 lifecycleTest = "2.8.3"
 espressoCore = "3.6.1"
@@ -21,7 +21,10 @@ hilt = "2.50"
 coroutine = "1.8.0"
 retrofit = "2.10.0"
 coil = "2.6.0"
-ksp = "1.9.10-1.0.13"
+ksp = "1.9.20-1.0.13"
+junitVersion = "1.2.1"
+appcompat = "1.7.0"
+material = "1.12.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -29,7 +32,7 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
 junit-vintage = { group = "org.junit.vintage", name = "junit-vintage-engine", version.ref = "junitJupiter" }
 turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
-roboelectric = { group = "org.roboelectric", name = "roboelectric", version.ref = "roboelectric" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
 coroutineTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutineTest" }
 lifecycleTest = { group = "androidx.lifecycle", name = "lifecycle-runtime-testing", version.ref = "lifecycleTest" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -58,9 +61,13 @@ kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutin
 squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 squareup-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }

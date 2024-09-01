@@ -70,6 +70,8 @@ android {
 
 dependencies {
 
+    testImplementation(project(":app:test-utils"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -116,8 +118,9 @@ dependencies {
     testImplementation(libs.turbine)
     testImplementation(libs.coroutineTest)
     testImplementation(libs.lifecycleTest)
-    testImplementation(libs.roboelectric)
+    testImplementation(libs.robolectric)
     testRuntimeOnly(libs.junit.vintage)
+
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)

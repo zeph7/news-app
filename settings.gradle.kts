@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "News App"
 include(":app")
- 
+include(":app:test-utils")
